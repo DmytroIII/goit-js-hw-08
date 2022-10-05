@@ -10,7 +10,7 @@ const inputMessage = document.querySelector("textarea[name = message]");
 
 const parseData = JSON.parse(localStorage.getItem("feedback-form-state"));
 
-let inputFormData = parsedData || {};
+let inputFormData = parseData || {};
 
 if (parseData) {
   inputMessage.value = parseData.message || "";
